@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonny Girvan - Product Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H49V2Y1YG6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H49V2Y1YG6');
+    </script>
+</head>
+
+<body>
+    <div class="navBar">
+        <ul>
+            <li><a href="../index.html">About</a></li>
+            <li class="selected"><a href="../work/index.html">Work</a></li>
+            <li><a href="../assets/jonnygirvan_resume.pdf" target="_blank">Resumé</a></li>
+        </ul>
+        <h4>Jonny Girvan</h4>
+    </div>
+    <main id="workInner">
+        <div class="workContainer">
+            <div class="workContainer__inner">
+                <div class="workContainer__innerText">
+                    <h2>Operations Management</h2>
+                    <h3>Application Background</h3>
+                    <p>An existing application that supports the lifecycle of a customer job provides admins with a way to import and manage both jobs and contracts in the system. Jobs are pulled in through customer portals, and requirements need to be met
+                        before they can be worked on by a project manager.</p>
+                    <h3>The Problem</h3>
+                    <p>When the app was initially developed, the admin role was given less priority as there are a lot fewer admins than general users. As the tool matured it was noted that admins had a hard time knowing what their duties were in the system,
+                        and how they should carry them out.</p>
+                    <p>A big part of an admins role is making sure that a job that enters the system has the required information on it to be worked on by a project manager. To do so, an admin would have to navigate between 3 different screens and try to
+                        figure out what they needed to enter.</p>
+                    <p>This problem was due to amplify as more admins from other companies were about to be onboarded, so the product team asked for this area to be investigated.</p>
+                    <h3>Approach Summary</h3>
+                    <ol>
+                        <li>Work with a business analyst to understand the current process</li>
+                        <li>Observe admins going through the process, followed by interviews to highlight pain points</li>
+                        <li>Met with future users of the app to see how they currently handle job assignments</li>
+                        <li>Presented pain points back to product team with proposed approach to solution. This was to ensure that we weren't going to create a solution that goes outside the requirements they need to enforce.</li>
+                        <li>Created a prototype and usability test for existing and future users of the application</li>
+                        <li>Refined the prototype after many testing sessions and validated refined version with users</li>
+                        <li>Delivery of prototype to product development team</li>
+                    </ol>
+                    <h3>Results</h3>
+                    <p style="margin-bottom: 1rem;"><b>Users were relieved to discover that this problem was being worked on. Existing users were delighted with being able to do their tasks on one screen, and new users found the process easy to jump into without guidance.</b></p>
+                </div>
+                <div class="workContainer__innerMedia">
+                    <h3>Solution Highlights</h3>
+                    <div class="mediaItem">
+                        <p>The proposed additions to the user dashboard. An admin is a multi-functional user and has other duties aside from job setup. Their admin functions were originally hidden in a hamburger menu. The proposed solution moved actions
+                            to the left-hand side of the dashboard level and added tags to catch the users' eye when there was an admin item that required their attention. </p>
+                        <img src="../assets/images/work/operations/1_dashboard.png">
+                    </div>
+                    <div class="mediaItem">
+                        <p>After a user sees that they have a required task in the job setup section, they will be brought to a list of the jobs in the system. The jobs with missing requirements are pulled to the top, and if the user hovers over one they
+                            can see the missing pieces of data that they are required to enter.</p>
+                        <img src="../assets/images/work/operations/2_jobList.png">
+                    </div>
+                    <div class="mediaItem">
+                        <p>When a job is selcted in the list, the system reminds users of the information that they have to fulfill and allows them to input it.</p>
+                        <img src="../assets/images/work/operations/3_selectedJob.png">
+                    </div>
+                    <div class="mediaItem">
+                        <p>Another requirement discovered during interviews, was the need to be able to bulk setup jobs. A user can select multiple items from the list and assign common attributes to them at the same time.</p>
+                        <img src="../assets/images/work/operations/4_bulk.png">
+                    </div>
+                    <div class="mediaItem">
+                        <p>Jobs can also be added to the system in bulk from a spreadsheet, so a workflow was created to allow users to map spreadsheet fields to system fields, and validate the results before import.</p>
+                        <img src="../assets/images/work/operations/5_import.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const tiles = document.querySelectorAll('.tile');
+
+        window.onload = function() {
+            tiles.forEach((tile, index) => {
+                setTimeout(function() {
+                    tile.classList.remove('hidden');
+                }, 200 * index);
+            });
+        };
+    </script>
+</body>
+
+</html>

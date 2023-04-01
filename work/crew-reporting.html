@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonny Girvan - Product Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H49V2Y1YG6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H49V2Y1YG6');
+    </script>
+</head>
+
+<body>
+    <div class="navBar">
+        <ul>
+            <li><a href="../index.html">About</a></li>
+            <li class="selected"><a href="../work/index.html">Work</a></li>
+            <li><a href="../assets/jonnygirvan_resume.pdf" target="_blank">Resumé</a></li>
+        </ul>
+        <h4>Jonny Girvan</h4>
+    </div>
+    <main id="workInner">
+        <div class="workContainer">
+            <div class="workContainer__inner">
+                <div class="workContainer__innerText">
+                    <h2>Crew Reporting</h2>
+                    <h3>Application Background</h3>
+                    <p>An executive at the company wanted a solution that would provide an overview of the status of field crews by office and area to leadership at corporate and subsidiary level. The ask was for the solution to be similar to that of an
+                        airport flightboard display for checking the status of flights.</p>
+                    <h3>The Challenges</h3>
+                    <p>The stakeholders had some specific requests that needed to be accommodated:</p>
+                    <ul>
+                        <li><b>Data density -</b> Stakeholders wanted to be able to get a snapshot view of the crew data that would inform them of where they would need to dive in further. This meant that a large amount of data had to be displayed on the
+                            screen while still being legible, and allowing conclusions to be made.</li>
+                        <li><b>Historical information -</b> Stakeholders wanted to be able to view how the crew statuses changed throughout the day</li>
+                        <li><b>Interactivity and environemnt - </b> The solution needed to be able to be viewed on a computer, or a large TV in a field office. Users on a computer would have to interact with features such as a timeline, or dive into different
+                            areas of the dataset. When the application was used on a TV, the purpose is so that it can be monitored from time to time during the day, providing up to date insights to the statuses of crews. When designing the app, device
+                            constraints such as screen burn in were taken into consideration.</li>
+                        <li><b>Extendable -</b> The original ask was for a POC to be developed to see how useful the solution would be in the day to day business. It was known that if the solution was successful, that more data displays would be requested,
+                            so the POC had to leave room for growth.</li>
+                    </ul>
+                    <h3>Approach Summary</h3>
+                    <ol>
+                        <li>Discovery sessions with stakeholders from corporate and subsidiaries</li>
+                        <li>Meetings with data team to find out what data points were available to work with</li>
+                        <li>Created variations of an initial design, to test the limits of data density</li>
+                        <li>Tried out mockups on different devices to make sure conclusions could be drawn at the different levels</li>
+                        <li>Refined mockups and built the POC application</li>
+                        <li>Deployed POC to pilot offices and users. Gathered feedback after a few weeks of use and then made changes</li>
+                        <li>Delivery to full product development team</li>
+                    </ol>
+                    <h3>Results</h3>
+                    <p style="margin-bottom: 1rem;"><b>Stakeholders found the insights the solution provided helpful in knowing the status of crews, and allowed them to take action if necessary.</b></p>
+                    <p>After the initial deployment, work began on providing some additional data displays that gave a geospatial view of the data. In the future, additional data sources are planned to be added to the solution to give more granular insight
+                        into the status of a crew.</p>
+                </div>
+                <div class="workContainer__innerMedia">
+                    <h3>Solution Highlights</h3>
+                    <div class="mediaItem">
+                        <p>The intial prototype, showing the view of employees from one field office. Colors were used to indicate users who were on or off the clock, and a timeline at the bottom allows users to playback 3 days worth of data.</p>
+                        <img src="../assets/images/work/crew/1_timeline.png">
+                    </div>
+                    <div class="mediaItem">
+                        <p>An overview display of all the offices belonging to a subsidiary. This is one of the views intended to be left on a TV so that a manager can track the status of offices through a day. If they notice something odd, they can dive
+                            down into a more granular view.</p>
+                        <img src="../assets/images/work/crew/2_aggregate.png">
+                    </div>
+                    <div class="mediaItem">
+                        <p>A map view that was added post initial rollout. This view provides information by state, and allows users to drill down from there. It displays sunrise, and sunset bars throughout the day to provide an additional factor to take
+                            into account when making business decisions.</p>
+                        <img src="../assets/images/work/crew/3_map.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const tiles = document.querySelectorAll('.tile');
+
+        window.onload = function() {
+            tiles.forEach((tile, index) => {
+                setTimeout(function() {
+                    tile.classList.remove('hidden');
+                }, 200 * index);
+            });
+        };
+    </script>
+</body>
+
+</html>

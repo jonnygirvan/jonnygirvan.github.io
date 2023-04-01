@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonny Girvan - Product Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H49V2Y1YG6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H49V2Y1YG6');
+    </script>
+</head>
+
+<body>
+    <div class="navBar">
+        <ul>
+            <li><a href="../index.html">About</a></li>
+            <li class="selected"><a href="../work/index.html">Work</a></li>
+            <li><a href="../assets/jonnygirvan_resume.pdf" target="_blank">Resumé</a></li>
+        </ul>
+        <h4>Jonny Girvan</h4>
+    </div>
+    <main id="workInner">
+        <div class="workContainer">
+            <div class="workContainer__inner">
+                <div class="workContainer__innerText">
+                    <h2>Aviation Weather</h2>
+                    <h3>Application Background</h3>
+                    <p>This is a personal project I am working on. The primary audience for this application are new pilots in training. My goal is to provide an easy to digest decoding of METAR reports for pilots who are starting the journey of obtaining
+                        a PPL, that gets them comfortable with reading reports in the long term. The idea is that a user will be able to pull in the latest report for a given airfield, and see a breakdown of the current conditions in a way that makes
+                        sense to them. A student should not rely on this forever though, so I want to provide multiple views of the report, so that as a student progresses they can switch the view up as they become familiar with the format of a METAR
+                        readout.
+                    </p>
+                    <p>There are many applications that offer METAR services, but I wanted to create something that was less intimidating for a new student, as well as something that works cross platform.</p>
+                    <p>This project is a topic that interests me as a student pilot, and is allowing me to bring together all the skills I have learned in the past into one solution.</p>
+                    <h3>Solution Process</h3>
+                    <p>Currently the application is in the beginning phases of development. The goal is to create an MVP that will be used to gather feedback for revisions and to drive the feature roadmap.</p>
+                    <ol>
+                        <li>MVP wireframes created in Figma</li>
+                        <li>Application styleguide created</li>
+                        <li>Creation of supporting 3D assets and animations using Blender</li>
+                        <li>MVP developed using a React frontend connected to the Aviavtion Weather Center to pull in data</li>
+                        <li>Build analytics into MVP and create a usability study to evaluate success of the current state</li>
+                        <li>Create feature and release roadmap for stable releases</li>
+                    </ol>
+                </div>
+                <div class="workContainer__innerMedia">
+                    <h3>Video demo of current MVP</h3>
+                    <video src="../assets/images/work/avweather/demovid.mp4" controls></video>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const tiles = document.querySelectorAll('.tile');
+
+        window.onload = function() {
+            tiles.forEach((tile, index) => {
+                setTimeout(function() {
+                    tile.classList.remove('hidden');
+                }, 200 * index);
+            });
+        };
+    </script>
+</body>
+
+</html>

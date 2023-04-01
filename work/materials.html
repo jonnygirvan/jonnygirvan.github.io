@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonny Girvan - Product Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H49V2Y1YG6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H49V2Y1YG6');
+    </script>
+</head>
+
+<body>
+    <div class="navBar">
+        <ul>
+            <li><a href="../index.html">About</a></li>
+            <li class="selected"><a href="../work/index.html">Work</a></li>
+            <li><a href="../assets/jonnygirvan_resume.pdf" target="_blank">Resumé</a></li>
+        </ul>
+        <h4>Jonny Girvan</h4>
+    </div>
+    <main id="workInner">
+        <div class="workContainer">
+            <div class="workContainer__inner">
+                <div class="workContainer__innerText">
+                    <h2>Warehouse Materials</h2>
+                    <h3>Application Background</h3>
+                    <p>The materials application was a pre-existing tool used on mobile devices in warehouses. Field crews will arrive at a warehouse and provide warehouse managers with a list of materials that they need to complete their work for that day.
+                        The warehouse manager is then responsible for providing the items to the crews and updating the warehouse inventory. This application was intended to streamline a previously paper-based process.</p>
+                    <h3>The Problem</h3>
+                    <p>When the application was originally deployed, users complained that the process of adding materials to an order was too time-consuming, and they struggled with keeping track of what was already on the issuance. This led users to abandon
+                        the app and reverting to their old processes, which reduced overall inventory accuracy. The product team asked for assistance in solving this issue.</p>
+                    <h3>Approach Summary</h3>
+                    <ol>
+                        <li>Learn about the platform stack to find out any system limitations</li>
+                        <li>Interview with users to hear about their issues</li>
+                        <li>Prototyped multiple variants</li>
+                        <li>Created a usability study to find the best design candidate</li>
+                        <li>Refined chosen prototype</li>
+                        <li>Final round of usability testing to validate the prototype</li>
+                        <li>Delivery to product team</li>
+                    </ol>
+                    <h3>Results</h3>
+                    <p style="margin-bottom: 1rem;"><b>The design provided to the development team, based on user feedback solved the previously evident abandonment issues.</b></p>
+                    <p style="margin-bottom: 1rem;">Users of the app can now add items to an order, and view the order as a whole on one screen. The screens needed to add an item were reduced from 3 to 1, which alleviated the stress users had when trying to keep up with a customer who
+                        was listing off items to them verbally.</p>
+                    <p>Additional enhancements discovered through interviews and testing were provided to the product team and are slated to be worked on at a later time. These include items such as allowing the crews to submit the order before arriving
+                        at the warehouse, based on the scope of their work, so the warehouse manager only has to worry about preparing the order. </p>
+                </div>
+                <div class="workContainer__innerMedia">
+                    <h3>Prototype used for a test scenario</h3>
+                    <iframe style="border: 1px solid rgba(0,0,0,0.12); position: relative; width: 100%; height: 720px;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9jVEQWItEcinfuRTsobWmb%2FWarehouse-List%3Fnode-id%3D223%253A1%26scaling%3Dscale-down%26page-id%3D223%253A0%26starting-point-node-id%3D223%253A1"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const tiles = document.querySelectorAll('.tile');
+
+        window.onload = function() {
+            tiles.forEach((tile, index) => {
+                setTimeout(function() {
+                    tile.classList.remove('hidden');
+                }, 200 * index);
+            });
+        };
+    </script>
+</body>
+
+</html>

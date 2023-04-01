@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonny Girvan - Product Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H49V2Y1YG6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H49V2Y1YG6');
+    </script>
+</head>
+
+<body>
+    <div class="navBar">
+        <ul>
+            <li><a href="../index.html">About</a></li>
+            <li class="selected"><a href="../work/index.html">Work</a></li>
+            <li><a href="../assets/jonnygirvan_resume.pdf" target="_blank">Resumé</a></li>
+        </ul>
+        <h4>Jonny Girvan</h4>
+    </div>
+    <main id="workHome">
+        <div class="tileContainer">
+            <div class="tile materials hidden">
+                <a href="./materials.html">
+                    <h3>Warehouse Materials</h3>
+                    <img src="../assets/images/work/materials/tileBG.png">
+                </a>
+            </div>
+            <div class="tile crew hidden">
+                <a href="./crew-reporting.html">
+                    <h3>Crew Reporting</h3>
+                    <img src="../assets/images/work/crew/tileBG.png">
+                </a>
+            </div>
+            <div class="tile operations hidden">
+                <a href="./ops-management.html">
+                    <h3>Operations Management</h3>
+                    <img src="../assets/images/work/operations/tileBG.png">
+                </a>
+            </div>
+            <div class="tile aviation hidden">
+                <a href="./aviation-weather.html">
+                    <h3>Aviation Weather</h3>
+                    <img src="../assets/images/work/avweather/metarender.png">
+                </a>
+            </div>
+        </div>
+    </main>
+    <script>
+        const tiles = document.querySelectorAll('.tile');
+
+        window.onload = function() {
+            tiles.forEach((tile, index) => {
+                setTimeout(function() {
+                    tile.classList.remove('hidden');
+                }, 200 * index);
+            });
+        };
+    </script>
+</body>
+
+</html>
